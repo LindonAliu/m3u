@@ -43,7 +43,7 @@ pub struct IptvExtInf {
     /// Note that some `m3u` extended formats specify streams with a `-1` duration.
     duration_secs: f64,
     /// The name of the media. E.g. "Aphex Twin - Windowlicker".
-    name: String,
+    pub name: String,
     /// The properties for IPTV compatible players
     pub iptv_props: IptvProps,
 }
