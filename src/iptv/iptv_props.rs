@@ -42,6 +42,9 @@ impl IptvProps {
     pub fn iter(&self) -> Iter<String, String> {
         self.0.iter()
     }
+    pub fn get(&self, key: &str) -> Option<&String> {
+        self.0.get(key)
+    }
 }
 
 impl From<BTreeMap<String, String>> for IptvProps {
